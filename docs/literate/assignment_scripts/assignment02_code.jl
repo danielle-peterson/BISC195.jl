@@ -68,6 +68,7 @@ question1 = ""
     question2(sequence)
 
 Checks if `sequence` is a String.
+Returns a boolean value, `true` or `false`.
 
 Example
 ≡≡≡≡≡≡≡≡≡
@@ -77,6 +78,11 @@ Example
 
     julia> question2(1001)
     false
+
+    julia> if question2("a string")
+               println("Hey, it's a string!")
+           end
+    Hey, it's a string!
 """
 function question2()
     ## put your code here
@@ -106,7 +112,7 @@ end
 # Let's try something a bit more complicated.
 # The `question3()` function has a doc string,
 # but is also incomplete. 
-# I've writtten some code to get you started,
+# I've written some code to get you started,
 # complete it so that the examples work as expected in the docstring.
 # If you use this function on `my_seq`,
 # you should get the answer `0.3`
@@ -171,7 +177,7 @@ Example
     GC Content:
     0.25
 
-    julia> question4("CCCGG")
+    julia> question4("CCCGG");
     Sequence:
     CCCGG
     GC Content:

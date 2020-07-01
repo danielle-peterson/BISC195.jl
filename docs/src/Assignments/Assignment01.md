@@ -110,7 +110,7 @@ assignment.jl		some_functions.jl
 The `cat` command prints the contents of a file or files to the screen:
 
 ```sh
-Assignment01 $ $ cat src/some_functions.jl
+Assignment01 $ cat src/some_functions.jl
 ```
 ```
 function say_name(name)
@@ -128,7 +128,7 @@ end
     or if you do, make sure you know how to return.
 
     When you're finished, you should be able to execute `pwd`
-    and see a path that ends with `Lesson01-<your-username>`
+    and see a path that ends with `Assignment01-<your-username>`
 
 ### Explore the assignment with VS code
 

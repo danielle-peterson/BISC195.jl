@@ -34,26 +34,33 @@ makedocs(;
     pages = [
         "Home" => "index.md",
         "Syllabus" => "Syllabus.md",
-        "Lesson 1" => [
-            "Getting Started"         => "Lesson1/index.md",
-            "Windows Users"           => "Lesson1/0_windows.md",
-            "Using the Terminal"      => "Lesson1/1_terminal.md",
-            "Git for Version Control" => "Lesson1/2_git.md",
-            "The Julia REPL"          => "Lesson1/3_julia_REPL.md",
-            "Assignment01"            => "Assignments/Assignment01.md"
+        "Lesson 1 - Getting Started" => [
+            "Lesson docs"  => "Lessons/Lesson1.md",
+            "Assignment01" => "Assignments/Assignment01.md"
         ],
-        "Lesson 2" => [
-            "Data Types and Functions" => "Lesson2/index.md",
-            "Data Types"               => "Lesson2/1_data_types.md",
-            "Functions"                => "Lesson2/2_functions.md",
-            "Assignment02"             => "Assignments/Assignment02.md"
+        "Lesson 2 - Data Types and Functions" => [
+            "Lesson docs"  => "Lessons/Lesson2.md",
+            "Assignment02" => "Assignments/Assignment02.md"
         ],
-        "Assignments" => "Assignments/Assignments.md",
-        "Lectures" => "Lectures/Lectures.md"
+        "Lesson 3 - Building functions and composition" => [
+            "Lesson docs"  => "Lessons/Lesson3.md",
+            "Assignment03" => "Assignments/Assignment03.md"
+        ],
+        "Lesson 4 - Building functions and composition" => [
+            "Lesson docs"  => "Lessons/Lesson4.md",
+            "Assignment04" => "Assignments/Assignment04.md"
+        ],
+        "Lesson 5 - Building functions and composition" => [
+            "Lesson docs"  => "Lessons/Lesson5.md",
+            "Assignment05" => "Assignments/Assignment05.md"
+        ],
+        "Assignment Index" => "Assignments/Assignments.md",
+        "Lecture Index"    => "Lectures/Lectures.md"
     ]
 )
 
 deploydocs(;
     repo="github.com/wellesley-bisc195/BISC195.jl",
-    push_preview = true
+    push_preview = true,
+    devbranch="trunk",
 )
